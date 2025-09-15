@@ -1,23 +1,27 @@
 services:
   backend:
     build: ./backend
-    container_name: recommendation-backend
+    container_name: sound-forest-backend
     ports:
       - "5000:5000"
     volumes:
       - ./backend:/app
+    env_file:
+      - .env
     environment:
       - FLASK_APP=main.py
       - FLASK_RUN_HOST=0.0.0.0
 
   frontend:
     build: ./frontend
-    container_name: recommendation-frontend
+    container_name: sound-forest-frontend
     ports:
       - "8501:8501"
     volumes:
       - ./frontend:/app
     depends_on:
       - backend
+    env_file:
+      - .env
     environment:
       - PYTHONUNBUFFERED=1
