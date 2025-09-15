@@ -1,0 +1,23 @@
+services:
+  backend:
+    build: ./backend
+    container_name: recommendation-backend
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./backend:/app
+    environment:
+      - FLASK_APP=main.py
+      - FLASK_RUN_HOST=0.0.0.0
+
+  frontend:
+    build: ./frontend
+    container_name: recommendation-frontend
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./frontend:/app
+    depends_on:
+      - backend
+    environment:
+      - PYTHONUNBUFFERED=1
