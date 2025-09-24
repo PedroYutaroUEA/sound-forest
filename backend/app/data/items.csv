@@ -1,0 +1,26 @@
+item_id,nome,categoria,genero_principal
+1,Guitarra Elétrica,Corda,Rock
+2,Violão Acústico,Corda,MPB
+3,Bateria,Percussão,Rock
+4,Piano,Teclado,Clássica
+5,Saxofone,Sopro,Jazz
+6,Violino,Corda,Clássica
+7,Baixo Elétrico,Corda,Rock
+8,Flauta,Sopro,Clássica
+9,Trompete,Sopro,Jazz
+10,Ukulele,Corda,Pop
+11,Contrabaixo Acústico,Corda,Jazz
+12,Clarinete,Sopro,Clássica
+13,Gaita,Sopro,Blues
+14,Cavaquinho,Corda,Samba
+15,Pandeiro,Percussão,Samba
+16,Sintetizador,Eletrônico,Eletrônica
+17,Harpa,Corda,Clássica
+18,Trombone,Sopro,Jazz
+19,Violoncelo,Corda,Clássica
+20,Marimba,Percussão,Erudito
+21,Acordeão,Teclado,Forró
+22,Banjo,Corda,Folk
+23,Oboé,Sopro,Clássica
+24,Bongô,Percussão,Afro-Cubana
+25,Tuba,Sopro,Clássica
