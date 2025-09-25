@@ -12,4 +12,4 @@ COPY . .
 EXPOSE 8501
 
 # Comando para rodar a aplicação Streamlit
-CMD ["streamlit", "run", "app.py", "--server.port", "8501", "--server.enableCORS", "false"]
+CMD ["streamlit", "run", "Seja_bem_vindo.py", "--server.port", "8501", "--server.enableCORS", "false"]
