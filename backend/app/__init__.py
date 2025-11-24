@@ -1,10 +1,17 @@
-import os
-from flask import Flask
-
-backend_host = os.environ.get("BACKEND_HOST")
-backend_port = os.environ.get("BACKEND_PORT")
+from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
+from .routes import router as api_routes
 
 
 def create_app():
-    app = Flask(__name__)
+    app = FastAPI(title="Music Recommender (Pearson)")
+    app.add_middleware(
+        CORSMiddleware,
+        allow_origins=["*"],
+        allow_credentials=True,
+        allow_methods=["*"],
+        allow_headers=["*"],
+    )
+
+    app.include_router(api_routes)
     return app
